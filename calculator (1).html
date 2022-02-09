@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculatorStyle.css">
+  <title>Szamologep</title>
+</head>
+
+<body>
+  <div class="calculatorBody">
+    <div class="output">
+      <div class="previousValue" id="previousValue"></div>
+      <div class="currentValue" id="currentValue"></div>
+    </div>
+    <button class="clear" onclick="clearing()">C</button>
+    <button id="delete" onclick="del()">DEL</button>
+    <button onclick="operator('/')">÷</button>
+    <button class="number" onclick="add(1)" id="1">1</button>
+    <button class="number" onclick="add(2)" id="2">2</button>
+    <button class="number" onclick="add(3)" id="3">3</button>
+    <button class="operator" id="multiplication" onclick="operator('*')">*</button>
+    <button class="number" onclick="add(4)" id="4">4</button>
+    <button class="number" onclick="add(5)" id="5">5</button>
+    <button class="number" onclick="add(6)" id="6">6</button>
+    <button class="operator" id="plus" onclick="operator('+')">+</button>
+    <button class="number" onclick="add(7)" id="7">7</button>
+    <button class="number" onclick="add(8)" id="8">8</button>
+    <button class="number" onclick="add(9)" id="9">9</button>
+    <button class="operator" id="minus" onclick="operator('-')">-</button>
+    <button class="operator" id="dot" onclick="add('.')">.</button>
+    <button class="number" onclick="add(0)" id="0">0</button>
+    <button class="equal" id="equal" onclick="equal()">=</button>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+
+</html>
